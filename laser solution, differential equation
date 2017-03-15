@@ -1,0 +1,14 @@
+clc;clear all;
+%R=1.3e7;
+R=8000000;
+dv=sqrt(3.98e14./R)􀀀sqrt(7.96e14./R􀀀5.67e7);
+m=[0.01:10:1000];
+for i=1:1:size(m,2)
+t(:,i)=laserfun1(m(i),dv);
+E(i)=8e4(m(i)^(1/2.26)/2)^2pi0.1t(i);
+end
+plot(t(1,:),m);
+xlabel(’Time/s’,’fontsize’,15);
+ylabel(’Target Mass/kg’,’fontsize’,15);
+set(gca,’FontSize’,15)
+grid on
