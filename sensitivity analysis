@@ -1,0 +1,27 @@
+#1
+x=[500:500:4000]
+y(1,:)=[110 200 290 390 480 580 650 740];
+y(2,:)=[100 160 230 306 380 450 530 580];
+y(3,:)=[60 90 130 170 210 260 295 315];
+y(4,:)=[30 50 70 100 120 140 160 180];
+y(5,:)=[15 20 35 55 75 90 103 105];
+plot(x,y(1,:));
+hold on
+plot(x,y(2,:));
+plot(x,y(3,:));
+plot(x,y(4,:));
+plot(x,y(5,:));
+legend(’0.02’,’0.0224’,’0.03’,’0.04’,’0.05’);
+xlabel(’Satellite Mass(kg)/years’,’fontsize’,15);
+ylabel(’Removal Value(thousands of value’,’fontsize’,15);
+set(gca,’FontSize’,15)
+#2
+clear
+clc
+x=[500:500:4000]
+y=[0.85 1.51 2.02 2.55 3.02 3.5 3.9 4.3]1e3;
+plot(x,y);
+hold on
+grid on
+xlabel(’Satellite Mass(kg)/years’,’fontsize’,15);
+set(gca,’FontSize’,15)
