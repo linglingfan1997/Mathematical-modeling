@@ -1,0 +1,10 @@
+clear
+clc
+r1=[7000000:100000:14000000];
+syms m2 v1
+for i=1:1:size(r1,2)
+r=r1(i);
+[m(i,:),v(i,:)]=solve(􀀀40007000+m2sqrt(3.98e14./r)==m2sqrt(7.96e14./r􀀀6.05e7)+4000end
+plot(r1,max(m’));
+xlabel(’Radius/m’);
+ylabel(’Target Mass/kg’);
